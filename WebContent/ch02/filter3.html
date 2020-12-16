@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$('h1').filter(function (index) {
+			return index%3 ==0;
+		}).css({
+			'background':'red',
+			'color':'white'
+		});		
+	});
+</script>
+</head>
+<body>
+	<h1>월</h1><h1>화</h1>
+	<h1>수</h1><h1>목</h1>
+	<h1>금</h1><h1>토</h1>
+</body>
+</html>
